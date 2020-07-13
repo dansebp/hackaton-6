@@ -1,0 +1,16 @@
+.banner {
+    margin: 0 auto;
+    padding: 5%;
+    background: map-get($theme-colors, special);
+    background-image: url(../images/banner-texture.png);
+    color: map-get($theme-colors, white);
+    text-align: center;
+
+    h1 {
+        font-weight: map-get($font-weight, bold);
+    }
+
+    p{
+        margin: 30px 0;
+    }
+}

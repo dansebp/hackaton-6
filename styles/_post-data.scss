@@ -1,0 +1,41 @@
+.data {
+
+    display: grid;
+
+    span {
+        display: block;
+    }
+    p {
+        color: map-get($theme-colors, primary);
+        font-size: map-get($font-size, body)#{rem};
+        font-weight: map-get($font-weight, bold);
+        line-height: 2.4rem;
+    }
+    i {
+        color: map-get($theme-colors, icons);
+        font-size: map-get($font-size, regular)#{rem};
+    }
+}
+
+.article-highlight .data,
+.featured-articles .data {
+
+    grid-template-columns: 80% 10% 10%;
+    margin: 25px 0 0;
+
+    i {
+        padding: 15px 0;
+        margin-right: 5px;
+    }
+}
+
+.article-item {
+    .data{
+        grid-template-columns: 86% 7% 7%;
+        margin: 25px 0 0;
+
+        i {
+            padding: 15px;
+        }
+    }
+}

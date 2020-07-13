@@ -1,0 +1,17 @@
+.search {
+    position: relative;
+
+    i {
+        position: absolute;
+        padding: 20px;
+        color: map-get($theme-colors, primary);
+    }
+
+    input {
+        height: 56px;
+        width: 100%;
+        padding: 0 45px;
+        @extend %input-box;
+        font-size: map-get($font-size, regular)#{rem};
+    }
+}

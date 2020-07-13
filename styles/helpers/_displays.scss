@@ -1,0 +1,19 @@
+.flex {
+    display: -webkit-flex;
+    display: flex;
+}
+.flx-between {
+    justify-content: space-between;
+}
+.flx-direction-c {
+    flex-direction: column;
+}
+.flx-direction-cr {
+    flex-direction: column-reverse;
+}
+.flx-direction-r {
+    flex-direction: row;
+}
+.flx-direction-rr {
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: map-get($font-size , html )
+}
+
+body{
+    font-family: map-get($font-family, body);
+    font-size: map-get($font-size, $key: body)#{rem};
+    color: map-get($theme-colors, body);
+}
+
+h1,
+h2,
+h3 {
+    @extend %titles;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: map-get($font-size, tittle-1)#{rem};
+}
+h2 {
+    font-size: map-get($font-size, tittle-2)#{rem};
+    font-weight: map-get($font-weight, medium);
+    color: map-get($theme-colors, secondary);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: map-get($font-size, tittle-2)#{rem};
+    font-weight: map-get($font-weight, medium);
+    line-height: 3rem;
+}
+
+a {
+    color: map-get($theme-colors, primary);
+    text-decoration: none;
+}
+
+p {
+    font-size: map-get($font-size, regular)#{rem};
+    line-height: 2.4rem;
+}
+
+section {
+    padding: 5% 0 0;
+    margin: 0 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
