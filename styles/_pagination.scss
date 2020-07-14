@@ -1,0 +1,18 @@
+.pagination {
+    padding: 40px 0 60px;
+
+    &__btn {
+
+        i{
+            padding: 5px;
+            font-size: map-get($font-size, body)#{rem};
+        }
+        a{
+            color: map-get($theme-colors, icons);
+        }
+        p{
+            padding: 0 10px;
+            font-size: map-get($font-size, body)#{rem};
+        }
+    }
+}

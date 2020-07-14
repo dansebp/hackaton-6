@@ -27,6 +27,7 @@ h2 {
     font-weight: map-get($font-weight, medium);
     color: map-get($theme-colors, secondary);
     text-transform: uppercase;
+    padding: 0 0 30px;
 }
 
 h3 {
@@ -36,13 +37,22 @@ h3 {
 }
 
 a {
+    font-family: 'Lato', sans-serif;
     color: map-get($theme-colors, primary);
     text-decoration: none;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     font-size: map-get($font-size, regular)#{rem};
     line-height: 2.4rem;
+}
+
+span {
+    font-size: 1.2rem;
 }
 
 section {

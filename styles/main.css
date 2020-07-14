@@ -86,7 +86,7 @@ html {
 
 body {
   font-family: "Lato";
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #778899;
 }
 
@@ -103,8 +103,9 @@ h1 {
 h2 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #5d8bbd;
+  color: #5a98d0;
   text-transform: uppercase;
+  padding: 0 0 30px;
 }
 
 h3 {
@@ -114,13 +115,22 @@ h3 {
 }
 
 a {
+  font-family: 'Lato', sans-serif;
   color: #1f3f68;
   text-decoration: none;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 2.4rem;
+}
+
+span {
+  font-size: 1.2rem;
 }
 
 section {
@@ -204,7 +214,7 @@ header li:nth-child(1) {
 
 .data p {
   color: #1f3f68;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 900;
   line-height: 2.4rem;
 }
@@ -224,16 +234,16 @@ header li:nth-child(1) {
 .article-highlight .data i,
 .featured-articles .data i {
   padding: 15px 0;
-  margin-right: 5px;
+  margin-right: 0 10px;
 }
 
-.article-item .data {
+.all-articles__item .data {
   -ms-grid-columns: 86% 7% 7%;
       grid-template-columns: 86% 7% 7%;
   margin: 25px 0 0;
 }
 
-.article-item .data i {
+.all-articles__item .data i {
   padding: 15px;
 }
 
@@ -308,7 +318,7 @@ header li:nth-child(1) {
 }
 
 .more {
-  color: #5d8bbd;
+  color: #5a98d0;
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 0.04rem;
@@ -321,5 +331,124 @@ header li:nth-child(1) {
   height: 1px;
   margin: 20px 20px 0;
   opacity: 0.3;
+}
+
+.all-articles__item {
+  padding: 0 0 20px;
+}
+
+.article-info {
+  padding: 10px 0 10px 20px;
+}
+
+.pagination {
+  padding: 40px 0 60px;
+}
+
+.pagination__btn i {
+  padding: 5px;
+  font-size: 1.4rem;
+}
+
+.pagination__btn a {
+  color: #356ead;
+}
+
+.pagination__btn p {
+  padding: 0 10px;
+  font-size: 1.4rem;
+}
+
+.footer {
+  margin-right: 5%;
+  border-top-right-radius: 80px;
+  background-color: #316099;
+  padding: 5% 0;
+}
+
+.footer__line {
+  background-color: #ffffff;
+  opacity: 0.4;
+  height: 1px;
+  margin: 80px 0;
+}
+
+.footer__rights {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.work-here {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.work-here__text {
+  padding: 0 5%;
+}
+
+.work-here__text h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.work-here__text p {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.work-here button {
+  width: 250px;
+  height: 56px;
+  margin: auto 5%;
+  border-radius: 10px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  border: none;
+  background-color: #5a98d0;
+}
+
+.work-here button a {
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.footer-links {
+  padding: 40px 0;
+}
+
+.footer-links span {
+  font-weight: 700;
+}
+
+.footer-links p,
+.footer-links span {
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 20px 20px 0 0;
+  display: inline-block;
+}
+
+.footer-links a {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.footer-links h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.footer-links__social a, .footer-links__nav a {
+  color: #ffffff;
+}
+
+.footer-links__social li, .footer-links__nav li {
+  padding: 20px 20px 0 0;
 }
 /*# sourceMappingURL=main.css.map */
