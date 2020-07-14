@@ -338,7 +338,16 @@ header li:nth-child(1) {
 }
 
 .article-info {
-  padding: 10px 0 10px 20px;
+  padding: 0 0 0 20px;
+}
+
+.article-info h3 {
+  padding: 0 0 5px 0;
+  font-size: 2rem;
+}
+
+.article-info p {
+  font-size: 1.4rem;
 }
 
 .pagination {
