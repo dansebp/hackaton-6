@@ -3,14 +3,23 @@
     padding: 5%;
     background: map-get($theme-colors, special);
     background-image: url(../images/banner-texture.png);
+    background-position: center;
+    background-size: cover;
     color: map-get($theme-colors, white);
     text-align: center;
 
-    h1 {
-        font-weight: map-get($font-weight, bold);
-    }
-
     p{
         margin: 30px 0;
+        font-size: map-get($font-size, tittle-2)#{rem};
+        line-height: 3rem;
+    }
+
+    @include breakpoints(md) {
+        h1 {
+            font-size: 3.2rem;
+        }
+        p{
+            font-size: map-get($font-size, regular)#{rem};
+        }
     }
 }

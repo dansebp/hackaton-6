@@ -3,6 +3,8 @@
 @import 'globals';
 @import './helpers/displays';
 @import './helpers/responsive';
+@import './mixing/breakpoints';
+@import 'layout';
 @import 'header';
 @import 'post-data';
 @import 'banner';
@@ -10,4 +12,4 @@
 @import 'popular';
 @import 'articles';
 @import 'pagination';
-@import 'footer';
+@import 'footer'

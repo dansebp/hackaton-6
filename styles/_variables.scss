@@ -8,7 +8,7 @@ $font-size: (
     body: 1.4,
     links: 2,
     regular: 1.6,
-    tittle-1: 3.4,
+    tittle-1: 4.4,
     tittle-2: 2.2,
     tittle-3: 3.6,
 );
@@ -53,4 +53,15 @@ $theme-colors: (
     background-color: #f4f4f4;
     border-radius: 10px;
     border: none;
-}
+};
+
+/*
+*BREAKPOINTS
+*/
+
+$breakpoints: (
+    lg: 1060px,
+    md: 768px,
+    sm: 620px,
+    xs: 480px,
+);

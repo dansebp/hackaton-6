@@ -2,10 +2,29 @@
 
     &__item {
     padding: 0 0 20px;
+
+        figure {
+            width: percentage(4/12);
+
+            @include breakpoints(md) {
+                width: percentage(5/12);
+            }
+        }
+
+    @include breakpoints(sm){
+            display: block;
+            margin-bottom: 20px;
+
+            figure {
+                width: percentage(12/12);
+            }
+        } 
     }
+
 }
 
 .article-info {
+    width: percentage(8/12);
     padding: 0 0 0 20px;
 
     h3{
@@ -15,6 +34,15 @@
 
     p {
         font-size: map-get($font-size, body)#{rem};
+    }
+
+    @include breakpoints(md) {
+        width: percentage(7/12);
+    }
+
+    @include breakpoints(sm){
+        width: percentage(12/12);
+        padding: 10px 0 0;
     }
 }
 

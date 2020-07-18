@@ -21,6 +21,9 @@ h3 {
   border: none;
 }
 
+/*
+*BREAKPOINTS
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -97,7 +100,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 4.4rem;
 }
 
 h2 {
@@ -126,7 +129,7 @@ input {
 
 p {
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
 }
 
 span {
@@ -135,13 +138,6 @@ span {
 
 section {
   padding: 5% 0 0;
-  margin: 0 20px;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 .flex {
@@ -188,19 +184,37 @@ section {
   width: 100%;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1060px) {
+  main .wrapper {
+    padding: 0 20px;
+  }
+}
+
 header {
   padding: 40px;
 }
 
-header li {
+header .nav li {
   display: inline-block;
   padding: 10px;
   font-size: 2rem;
   font-weight: 300;
 }
 
-header li:nth-child(1) {
+header .nav li:nth-child(1) {
   font-weight: 900;
+}
+
+@media (max-width: 620px) {
+  header .nav li {
+    font-size: 1.6rem;
+  }
 }
 
 .data {
@@ -226,15 +240,16 @@ header li:nth-child(1) {
 
 .article-highlight .data,
 .featured-articles .data {
-  -ms-grid-columns: 80% 10% 10%;
-      grid-template-columns: 80% 10% 10%;
+  -ms-grid-columns: 76% 12% 12%;
+      grid-template-columns: 76% 12% 12%;
   margin: 25px 0 0;
 }
 
 .article-highlight .data i,
 .featured-articles .data i {
-  padding: 15px 0;
-  margin-right: 0 10px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 15px 5px;
 }
 
 .all-articles__item .data {
@@ -252,16 +267,25 @@ header li:nth-child(1) {
   padding: 5%;
   background: #3481d7;
   background-image: url(../images/banner-texture.png);
+  background-position: center;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
 }
 
-.banner h1 {
-  font-weight: 900;
-}
-
 .banner p {
   margin: 30px 0;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 3.2rem;
+  }
+  .banner p {
+    font-size: 1.6rem;
+  }
 }
 
 .search {
@@ -296,9 +320,58 @@ header li:nth-child(1) {
 }
 
 .article-highlight h3 {
-  font-size: 3.6 rem;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 4.4rem;
+}
+
+@media (max-width: 1060px) {
+  .article-highlight__left {
+    width: 50%;
+  }
+  .article-highlight__right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-highlight {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1.8fr 1fr;
+        grid-template-rows: 1.8fr 1fr;
+  }
+  .article-highlight__left {
+    width: 100%;
+    padding-right: 0;
+    -ms-grid-row: 2;
+    grid-row: 2 / 2;
+  }
+  .article-highlight__right {
+    width: 100%;
+    padding-left: 0;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .article-highlight h3 {
+    padding: 10px 0;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .article-highlight {
+    -ms-grid-rows: 1.2fr 1fr;
+        grid-template-rows: 1.2fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-highlight {
+    -ms-grid-rows: 1.2fr 1fr;
+        grid-template-rows: 1.2fr 1fr;
+  }
 }
 
 .featured-articles {
@@ -315,6 +388,12 @@ header li:nth-child(1) {
 
 .featured-articles h3 {
   padding: 10px 0 10px;
+}
+
+@media (max-width: 620px) {
+  .featured-articles {
+    display: block;
+  }
 }
 
 .more {
@@ -337,7 +416,28 @@ header li:nth-child(1) {
   padding: 0 0 20px;
 }
 
+.all-articles__item figure {
+  width: 33.33333%;
+}
+
+@media (max-width: 768px) {
+  .all-articles__item figure {
+    width: 41.66667%;
+  }
+}
+
+@media (max-width: 620px) {
+  .all-articles__item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .all-articles__item figure {
+    width: 100%;
+  }
+}
+
 .article-info {
+  width: 66.66667%;
   padding: 0 0 0 20px;
 }
 
@@ -348,6 +448,19 @@ header li:nth-child(1) {
 
 .article-info p {
   font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .article-info {
+    width: 58.33333%;
+  }
+}
+
+@media (max-width: 620px) {
+  .article-info {
+    width: 100%;
+    padding: 10px 0 0;
+  }
 }
 
 .pagination {

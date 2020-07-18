@@ -20,12 +20,12 @@
 .article-highlight .data,
 .featured-articles .data {
 
-    grid-template-columns: 80% 10% 10%;
+    grid-template-columns: 76% 12% 12%;
     margin: 25px 0 0;
 
     i {
-        padding: 15px 0;
-        margin-right: 0 10px;
+        justify-self: end;
+        padding: 15px 5px;
     }
 }
 
