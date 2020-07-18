@@ -20,7 +20,7 @@
 
 .work-here {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
 
   &__text {
     padding: 0 5%;
@@ -36,7 +36,12 @@
       color: map-get($theme-colors, white);
       opacity: 0.6;
     }
+    @include breakpoints(sm){
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
+
   button {
     width: 250px;
     height: 56px;
@@ -46,12 +51,24 @@
     border: none;
     background-color: map-get($theme-colors, secondary);
 
-    a {
-      font-size: map-get($font-size, tittle-2)#{rem};
-      color: map-get($theme-colors, white);
+      a {
+        font-size: map-get($font-size, tittle-2)#{rem};
+        color: map-get($theme-colors, white);
+      }
+    
+    @include breakpoints(sm){
+      align-self: center;
     }
   }
+
+  @include breakpoints(sm){
+    display: flex;
+    flex-direction: column;
+  }
+
 }
+
+
 .footer-links {
   padding: 40px 0;
 
@@ -82,6 +99,19 @@
       li {
           padding: 20px 20px 0 0;
       }
+  }
+  @include breakpoints(md){
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      padding: 0;
+    }
+    &__logo,
+    &__nav,
+    &__social{
+      margin-bottom: 40px;
+    }
   }
 }
 
